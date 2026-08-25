@@ -3352,13 +3352,16 @@ export const ja = defineLocale({
       free: '無料',
       cacheRead: 'キャッシュ読み取り',
       priceTitle: (input: string, output: string, cache: string) =>
-        `入力 ${input}/Mtok · 出力 ${output}/Mtok` + (cache ? ` · キャッシュ読み取り ${cache}/Mtok` : '')
+        `入力 ${input}/Mtok · 出力 ${output}/Mtok` + (cache ? ` · キャッシュ読み取り ${cache}/Mtok` : ''),
+      pinnedSection: 'ピン留め'
     },
     modelOptions: {
       noOptions: 'このモデルにはオプションがありません',
       options: 'オプション',
       thinking: '思考',
       fast: '高速',
+      pinModel: '先頭にピン留め',
+      unpinModel: 'ピン留めを解除',
       effort: '努力度',
       minimal: '最小',
       low: '低',

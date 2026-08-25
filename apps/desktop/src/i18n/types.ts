@@ -3863,12 +3863,15 @@ export interface Translations {
       free: string
       cacheRead: string
       priceTitle: (input: string, output: string, cache: string) => string
+      pinnedSection: string
     }
     modelOptions: {
       noOptions: string
       options: string
       thinking: string
       fast: string
+      pinModel: string
+      unpinModel: string
       effort: string
       minimal: string
       low: string

@@ -2904,13 +2904,16 @@ export const ar = defineLocale({
       free: 'مجاني',
       cacheRead: 'قراءة من الذاكرة المؤقتة',
       priceTitle: (input: string, output: string, cache: string) =>
-        `الإدخال ${input}/Mtok · الإخراج ${output}/Mtok` + (cache ? ` · قراءة من الذاكرة المؤقتة ${cache}/Mtok` : '')
+        `الإدخال ${input}/Mtok · الإخراج ${output}/Mtok` + (cache ? ` · قراءة من الذاكرة المؤقتة ${cache}/Mtok` : ''),
+      pinnedSection: 'مثبَّت'
     },
     modelOptions: {
       noOptions: 'لا توجد خيارات لهذا النموذج',
       options: 'الخيارات',
       thinking: 'التفكير',
       fast: 'سريع',
+      pinModel: 'تثبيت في الأعلى',
+      unpinModel: 'إلغاء التثبيت',
       effort: 'الجهد',
       minimal: 'أدنى',
       low: 'منخفض',

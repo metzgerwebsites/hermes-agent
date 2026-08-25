@@ -3538,13 +3538,16 @@ export const zhHant = defineLocale({
       free: '免費',
       cacheRead: '快取讀取',
       priceTitle: (input: string, output: string, cache: string) =>
-        `輸入 ${input}/Mtok · 輸出 ${output}/Mtok` + (cache ? ` · 快取讀取 ${cache}/Mtok` : '')
+        `輸入 ${input}/Mtok · 輸出 ${output}/Mtok` + (cache ? ` · 快取讀取 ${cache}/Mtok` : ''),
+      pinnedSection: '已釘選'
     },
     modelOptions: {
       noOptions: '此模型沒有可用選項',
       options: '選項',
       thinking: '思考',
       fast: '快速',
+      pinModel: '釘選到頂端',
+      unpinModel: '取消釘選',
       effort: '推理強度',
       minimal: '最小',
       low: '低',
