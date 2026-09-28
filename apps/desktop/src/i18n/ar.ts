@@ -2900,20 +2900,21 @@ export const ar = defineLocale({
       editModels: 'تحرير النماذج',
       followDefault: 'استخدام الافتراضي من الإعدادات',
       refreshModels: 'تحديث النماذج',
+      pinned: 'المثبتة',
       fast: 'سريع',
       free: 'مجاني',
       cacheRead: 'قراءة من الذاكرة المؤقتة',
       priceTitle: (input: string, output: string, cache: string) =>
-        `الإدخال ${input}/Mtok · الإخراج ${output}/Mtok` + (cache ? ` · قراءة من الذاكرة المؤقتة ${cache}/Mtok` : ''),
-      pinnedSection: 'مثبَّت'
+        `الإدخال ${input}/Mtok · الإخراج ${output}/Mtok` + (cache ? ` · قراءة من الذاكرة المؤقتة ${cache}/Mtok` : '')
     },
     modelOptions: {
       noOptions: 'لا توجد خيارات لهذا النموذج',
       options: 'الخيارات',
       thinking: 'التفكير',
       fast: 'سريع',
-      pinModel: 'تثبيت في الأعلى',
-      unpinModel: 'إلغاء التثبيت',
+      pin: 'تثبيت',
+      unpin: 'إلغاء التثبيت',
+      shiftClickHint: 'انقر مع Shift على نموذج لتثبيته',
       effort: 'الجهد',
       minimal: 'أدنى',
       low: 'منخفض',
